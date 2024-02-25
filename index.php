@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SDS Website</title>
-
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Rosarivo&display=swap" rel="stylesheet">
-
-    <!-- font awesome file link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-
-    <!-- custom header file link -->
+     <!-- custom header file link -->
     <?php wp_head(); ?>
-</head>
-<!------------------------------- header section start here ------------------------------->
-<body>
-    <header class='header'>
-        <div class="header-container">
-
-                <a href="#" class="logo"><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=""></a>
-
-                <div class="fas fa-bars"></div>
-
-                <nav id="header-navbar" class="navbar">
-                    <ul>
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#past work">past work</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <!-- Add other navigation items here -->
-                    </ul>
-                </nav>
-                
-                <a href="#"><button id="header-button" class="wht-btn">book a call</button>  </a>  
-       
-        </div>
-    </header>
-        <!-- header section ends here -->
     <!-- Hero section starts here -->
     <section id="hero" class="hero">
         <div class="flex-container">
@@ -352,79 +308,7 @@
         </div>
     </section>
     <!-- Lead Magnet section ends here -->
-    <!-- Footer section starts here -->
-    <footer>
-        <div class="flex-container">
 
-            <div class="about-us">
-                <h3>about us</h3>
-                <p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Officia nostrum, placeat ex corporis explicabo.</p>
 
-                <div class="subscription-form">
-                    <form action="submit" id="form-field"><input type="text" placeholder="your email address"></form>
-                    <a href="#"><button id="subscribe-button" class="orng-btn">subscribe</button></a> 
-                </div>
-              
-            </div>
-
-            <div class="right-column">
-                <div class="menu">
-                    <h4>menu</h4>
-                    <ul>
-                        <li>about us</li>
-                        <li>careers</li>
-                        <li>blog</li>
-                        <li>pricing</li>
-                    </ul>
-                </div>
-
-                <div class="sub-menu">
-                    <h4>sub menu</h4>
-                    <ul>
-                        <li>about us</li>
-                        <li>careers</li>
-                        <li>blog</li>
-                        <li>pricing</li>
-                    </ul>
-                </div>
-
-                <div class="company">
-                    <h4>company</h4>
-                    <ul>
-                        <li class="identifier">tel:</li>
-                        <li class="info">(506) 800-0580</li>
-                        <li class="identifier">email:</li>
-                        <li class="info" id="email">straightforwardds@gmail.com</li>
-                        <li class="identifier">address</li>
-                        <li class="info">Fredericton N.B. Canada</li>
-                    </ul>
-
-                    <h4>connect with us</h4>
-                    <div class="flex-icons">
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a> 
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a> 
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a> 
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-message">
-            <div class="flex-container">
-                <p>2024 straightforward Digital Strategy <i class="fa-regular fa-copyright"></i> All Rights Reserved.</p>
-            </div>
-        </div>
-
-    </footer>
-    <!-- Footer section ends here -->
-
-    <!-- custom footer file link -->
-    <?php wp_footer(); ?>
-
-    <!-- jquery file link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- custom js file link -->
-    <script src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
-</body>
-</html>
+<!-- custom footer file link -->
+<?php wp_footer(); ?>

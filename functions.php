@@ -12,5 +12,6 @@ function my_theme_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
 
-
+/*Use WordPress's debugging mode to catch errors and warnings */
+define('WP_DEBUG', true);
 ?> 
