@@ -1,0 +1,1473 @@
+/*
+Theme Name: SDS WP Thme
+Theme URI: custom built
+Author: SDS
+Author URI: https://straightforwarddigitalstrategy.com
+Description: Our custom built theme for the SDS website
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: Proprietary License
+License URI: 
+Text Domain: straightforwarddigitalstrategy
+*/
+
+/* Global Styling */
+:root{
+    --orange:#FF8520;
+    --white:#FFF;
+    --black:#3E3E3E;
+    --grey:#D9D9D9;
+    --background:#F8F8F8;
+}
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rosarivo', cursive;
+*/
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--white);
+    color: var(--black);
+ 
+}
+
+.header-container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*Creating a class for hidding elements*/
+.hidden{
+    display: none;
+}
+
+.orng-btn{
+    font-family: 'Poppins' sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--orange);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    border: 1px solid transparent;
+    padding: 2rem 4rem;
+    min-width: 4rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.orng-btn:hover{
+    font-size: 2.2rem;
+    border-color: #ccc;
+}
+
+.wht-btn{
+    font-family: 'Poppins' sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    background-color: var(--white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    border: 1px solid transparent;
+    padding: 2rem 4rem;
+    min-width: 4rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.wht-btn:hover{
+    font-size: 2.2rem;
+    color: #ccc;
+    border-color: #FFF;
+}
+
+.arrow-btn{
+    font-family: 'Poppins' sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--orange);
+    background-color: rgba(255, 133, 32, 0.2);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 133, 32, 0.2);
+    padding: 0.5rem 1.5rem;
+    min-width: 1rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.arrow-btn:hover{
+    font-size: 2.2rem;
+    color: #FF8520;
+    border-color: #FF8520;
+}
+
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+/* -------------------------------------------------------------- Start of Custom Styling ------------------------------------------------------*/
+
+/* Header Section */
+.header{
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.header .logo{
+    padding: 0 .5rem;
+}
+
+
+.header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header .navbar ul li{
+    margin: 0 1.5rem;
+}
+
+.header .navbar ul li a{
+    font-size: 2rem;
+    color: #3E3E3E;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 3;
+}
+
+.header .navbar ul li a:hover{
+    color: #ccc;
+    font-size: 2.2rem;
+}
+
+.header .fa-bars{
+    color: #3E3E3E;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+
+
+
+/* Hero Section */
+.hero{
+    min-height: 100vh;
+    width: 100vw;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.hero .left-column{
+    margin: 6rem 2rem;
+    z-index: 10;
+}
+
+
+.hero .sds-h1{
+    color: var(--black);
+    font-size: 7rem;
+    font-weight: 800;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    max-width: 80%;
+}
+
+.hero .sds-h1::after {
+    content: "."; /* An empty string for decorative purposes */
+    width: 50px;
+    height: 50px;
+    color: var(--orange); /* A orange dot will appear after the H1*/
+    margin-top: 5px;
+}
+
+.hero .slogan{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--orange);
+    padding-bottom: 1rem;
+    max-width: 50%;
+}
+
+.hero .description{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: 2rem;
+    max-width: 80%;
+}
+
+.hero .right-column{
+    position: absolute;
+    top: -12rem;
+    right: -11rem;
+    z-index: 1;
+}
+
+.hero .right-column .img{
+    width: 100%;
+    height: auto;
+}
+
+.hero .chevron-arrow{
+    justify-content: center;
+    font-size: 7rem;
+    color: var(--grey);
+    padding-top: 16rem;
+}
+
+.hero .chevron-arrow:hover{
+    font-size: 8rem;
+}
+
+
+/* Value Stack Section */
+.value-stack{
+    background-color: var(--white);
+    padding: 0 0 30rem;
+}
+
+.value-stack .flex-container{
+    width: 70%;
+}
+
+.value-stack .card{
+    min-height: 28rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: calc((100% - 200px) / 3 );
+    position: relative;
+    padding: 4rem 0;
+}
+
+
+.value-stack .card .icon{
+    min-width: 50px;
+    height: auto;
+    padding: 2rem;
+}
+
+.value-stack .card h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+}
+
+.value-stack .card p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 2rem 6rem;
+}
+
+.value-stack .card a{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+/* The Stakes Section */
+.the-stakes{
+    background-color: var(--white);
+    padding: 10rem 0;
+    background-image: url(images/background-elipse-1.png);
+    background-repeat: no-repeat;
+}
+
+
+.the-stakes .left-column{
+    max-width: 60rem;
+    margin-left: 8rem;
+    position: relative;
+}
+
+.the-stakes .left-column .image-1{
+    background-image: url(images/people-in-office-2.png);
+    background-size: cover;
+    background-position: center;
+    width: 48rem;
+    height: 52rem;
+    border-radius: 3%;
+}
+
+.the-stakes .left-column .image-2{
+    background-image: url(images/people-in-office-1.png);
+    background-size: cover;
+    background-position: center;
+    width: 24rem;
+    height: 28rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -4rem;
+    right: -8rem;
+    z-index: 10;
+}
+
+.the-stakes .right-column{
+    margin-left: 18rem;
+    margin-right: 4rem;
+}
+
+.the-stakes .right-column span{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.the-stakes .right-column h3{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.the-stakes .right-column p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+
+/* Value Proposition Section */
+.value-proposition{
+    background-color: var(--background);
+    margin: 10rem 0;
+    padding: 14rem 0;
+}
+
+.value-proposition .card{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.value-proposition .card .icon{
+    padding-bottom: 2rem;
+}
+
+.value-proposition .card h2{
+    font-size: 2rem;
+    padding-bottom: .8rem;
+}
+
+.value-proposition .card p{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 0rem 2rem 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* The Guide Section */
+.the-guide{
+    background-color: var(--white);
+    padding: 16rem 0;
+    background-image: url(images/reverse-ellipse.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.the-guide .left-column{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.the-guide .left-column span{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.the-guide .left-column h3{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.the-guide .left-column p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.the-guide .left-column{
+    max-width: 60rem;
+    margin-left: 8rem;
+    position: relative;
+}
+
+.the-guide .right-column{
+    margin-right: 12rem;
+}
+
+.the-guide .right-column .image-1{
+    background-image: url(images/people-in-office-3.png);
+    background-size: cover;
+    background-position: center;
+    width: 54rem;
+    height: 52rem;
+    border-radius: 3%;
+}
+
+/* Package Pricing Section */
+.package-pricing{
+    background-color: var(--white);
+    padding: 16rem 0;
+}
+
+.package-pricing .flex-container{
+    display: block;
+}
+
+.package-pricing .heading{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.package-pricing .heading span{
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.package-pricing .heading h2{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.package-pricing .card-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-pricing .card{
+    min-height: 28rem;
+    padding: 7rem 3rem 4rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: calc((100% - 60px) / 3 );
+}
+
+.package-pricing .card-section .card span{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--orange);
+    line-height: 0;
+}
+
+.package-pricing .card-section .card h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 3rem;
+}
+
+.package-pricing .card-section .card p{
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+}
+
+.package-pricing .card-section .card ul{
+    list-style-type: none;
+    padding-bottom: 5rem;
+}
+
+.package-pricing .card-section .card li{
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.package-pricing .card-section .card li .fa-solid{
+    padding-right: 1rem;
+}
+
+.package-pricing .card-section .card .payment-price{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.package-pricing .card-section .card .payment-term{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+
+.package-pricing .card-section .card .payment-term::after{
+    content: "---------------------------------------------------------------------------------------";
+    display: block; /* Makes the ::after content behave like a block-level element */
+    margin-top: 8px; /* Adjust as needed for spacing above the line */
+    font-size: 1.5rem;
+    color: var(--grey);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.package-pricing .card-section .card-2{
+    background-image: linear-gradient(to left, #FF5C00, #FF7700, #FF8C39);
+}
+
+.package-pricing .card-section .card .orng-btn, .wht-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.package-pricing .card-section .card-2 span,
+.package-pricing .card-section .card-2 p,
+.package-pricing .card-section .card-2 ul{
+    color: var(--white);
+}
+
+
+.package-pricing .card-section .orange-card .payment-term,
+.package-pricing .card-section .orange-card .payment-price{
+    color: var(--white);
+}
+
+
+/* Start of The Plan Section */
+.the-plan{
+    background-color: var(--white);
+    padding: 16rem 0;
+}
+
+.the-plan .flex-container{
+    display: block;
+}
+
+.the-plan .heading{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.the-plan .heading span{
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.the-plan .heading h2{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.the-plan .card-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the-plan .card{
+    min-height: 20rem;
+    padding: 4rem 3rem 4rem;
+    border: 2px solid #FF8520;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: calc((100% - 60px) / 4 );
+    position: relative;
+}
+
+.the-plan .card span{
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(255, 133, 32, 0.4);
+}
+
+.the-plan .card h3{
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.the-plan .card p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.the-plan .card-section .icon{
+    position: absolute;
+    top: 1%;
+    left: 90%;
+}
+
+/* Call To Action Section #FF5C00, #FF7700, #FF8C39 */
+.call-to-action-banner{
+    background-image: linear-gradient(to left, #FF5C00, #FF7700, #FF8C39 95%);
+    padding: 16rem 0;
+}
+
+.call-to-action-banner .heading{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.call-to-action-banner .heading h2{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.call-to-action-banner .heading p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+    color: var(--white);
+    padding: 0 15% 0;
+    margin-bottom: 3rem;
+}
+
+/* Explainer Section */
+.explainer{
+    background-color: var(--white);
+    padding: 16rem 0;
+}
+
+.explainer .left-column{
+    max-width: 60rem;
+    margin-left: 8rem;
+    position: relative;
+}
+
+.explainer .left-column .image-1{
+    background-image: url(images/people-in-office-5.png);
+    background-size: cover;
+    background-position: center;
+    width: 48rem;
+    height: 52rem;
+    border-radius: 3%;
+}
+
+.explainer .left-column .image-2{
+    background-image: url(images/people-in-office-4.png);
+    background-size: cover;
+    background-position: center;
+    width: 24rem;
+    height: 28rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -4rem;
+    right: -8rem;
+    z-index: 10;
+}
+
+.explainer .right-column{
+    margin-left: 18rem;
+    margin-right: 4rem;
+}
+
+.explainer .right-column span{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.explainer .right-column h3{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.explainer .right-column p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* Lead-Magnet Section */
+.lead-magnet{
+    background-color: black;
+    padding: 16rem 0;
+}
+
+.lead-magnet .heading{
+    text-align: center;
+}
+
+.lead-magnet .heading span{
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+.lead-magnet .heading h2{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+.lead-magnet .heading p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 4rem;
+    color: var(--white);
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-bottom: 2rem;
+}
+
+.lead-magnet .form-submition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lead-magnet .form-submition input{
+    font-family: 'Poppins' sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: rgba(217, 217, 217, 0.4);
+    border-radius: 40px;
+    border: none;
+    padding: 2rem 8rem;
+    min-width: 4rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.lead-magnet .form-submition input::placeholder {
+  color: grey;
+  font-style: italic;
+}
+
+.lead-magnet .form-submition a{
+    padding-left: 1rem;
+
+}
+
+.lead-magnet .form-submition .orng-btn{
+    padding: 2rem 8rem;
+}
+
+
+/* Footer Section */
+footer{
+    background-color: var(--white);
+    padding: 16rem 0 0rem;
+    border-top: 10px solid var(--orange);
+}
+
+footer .flex-container{
+    align-items: start;
+    width: 90%;
+    padding-bottom: 8rem;
+}
+
+footer .flex-container .about-us .subscription-form{
+    display: flex;
+    align-items: center;
+}
+
+footer .flex-container .about-us .subscription-form .orng-btn{
+    border-radius: 0px 40px 40px 0px;
+}
+
+footer .flex-container .about-us .subscription-form input{
+    font-family: 'Poppins' sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black);
+    background-color: rgba(217, 217, 217, 0.4);
+    border-radius: 40px 0 0 40px;
+    border: 1px solid black;
+    border-right: none;
+    padding: 2rem 6rem;
+    min-width: 4rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+footer .flex-container .about-us h3{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--orange);
+    padding-bottom: 1rem;
+}
+
+footer .flex-container .about-us p{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 4rem;
+    max-width: 60rem;
+    padding-bottom: 1rem;
+}
+
+footer .right-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+}
+
+footer .flex-container .menu{
+    padding: 0 4rem 0;
+}
+
+footer .flex-container .menu h4{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    max-width: 60rem;
+    padding-bottom: 3rem;
+}
+
+footer .flex-container .sub-menu h4{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    max-width: 60rem;
+    padding-bottom: 3rem;
+}
+
+footer .flex-container .sub-menu{
+    padding: 0 4rem 0;
+}
+
+footer .flex-container .company h4{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    max-width: 60rem;
+    padding-bottom: .5rem;
+}
+
+footer .flex-container .company{
+    padding: 0 4rem 0;
+}
+
+footer .flex-container .menu ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 5rem;
+    list-style-type: none;
+}
+
+footer .flex-container .sub-menu ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 4rem;
+    list-style-type: none;
+}
+
+footer .flex-container .company ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    list-style-type: none;
+}
+
+footer .flex-container .company ul li #email{
+    text-transform: lowercase!important;
+}
+
+footer .flex-container .company .info{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+footer .flex-container .company .flex-icons a{
+    font-size: 3rem;
+    color: var(--orange);
+    padding-right: 2.5rem;
+}
+
+footer .flex-container .company .flex-icons a:hover{
+    font-size: 4rem;
+    color: orange;
+}
+
+
+
+footer .bottom-message{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer .bottom-message .flex-container{
+    justify-content: center;
+    padding-bottom: 0;
+
+}
+
+footer .bottom-message .flex-container p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 2rem;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+/* -------------------------------------------------------------- media queries ------------------------------------------------------*/
+
+@media (max-width:1400px){
+    .explainer .flex-container{
+        flex-direction: column; 
+    }
+
+    .explainer .flex-container #element-1{
+        order: 1;
+    }
+
+    .explainer .flex-container #element-2{
+        order: 2;
+    }
+
+    .explainer .left-column{
+        max-width: 100%;
+    }
+
+    .explainer .right-column{
+        margin-left: 9rem;
+        margin-right: 9rem;
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    }
+
+    .the-guide .left-column {
+        padding-bottom: 8rem;
+    }
+
+    .the-stakes .flex-container{
+        flex-direction: column; 
+    }
+
+    #element-1{
+        order: 2;
+    }
+
+    #element-2{
+        order: 1;
+    }
+
+    .the-stakes .left-column{
+        max-width: 100%;
+    }
+
+    .the-stakes .right-column{
+        padding-bottom: 8rem;
+    }
+
+    footer .flex-container{
+        display: block;
+    }
+
+    footer .flex-container .about-us{
+        padding-bottom: 10rem;
+    }
+}
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .header .fa-bars{
+        display: block;
+    }
+
+    .header .wht-btn{
+        margin-bottom: 3rem;
+    }
+
+    .header .navbar{
+        position: fixed;
+        top: -120%; left: 0;
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        border-top: .1rem solid rgba(0, 0, 0, .3);
+        padding-top: 3rem;
+        z-index: 10000;
+    }
+
+    .header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+
+    }
+
+    .header .navbar ul li{
+        margin:1rem 0;
+    }
+
+    .header .navbar ul li a{
+        color: #444;
+        font-size: 2.4rem;
+    }
+
+    .header .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .nav-toggle{
+        top: 12rem;
+    }
+
+    .hero .left-column{
+        padding-top: 10rem;
+    }
+
+    .hero .slogan{
+        font-size: 5rem;
+        color: var(--orange);
+        max-width: 55%;
+    }
+
+    .hero .description{
+        font-size: 2rem;
+        max-width: 60%;
+    }
+
+    .hero .right-column{
+        top: -38rem;
+    }
+
+    .value-proposition .flex-container{
+         flex-wrap: wrap;
+    }
+
+    .value-proposition .card{
+         width: calc((100% - 30px) / 2 );
+    }
+
+    .value-proposition .card-3{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8rem;
+    }
+
+    .the-guide{
+        padding: 16rem 0 48rem;
+    }
+
+    .the-guide .flex-container{
+        display: block;
+    }
+
+    .the-guide .right-column{
+        margin-right: 0;
+    }
+
+    .the-guide .right-column .image-1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .the-plan .card-section{
+         flex-wrap: wrap;
+    }
+
+    .the-plan .card{
+         width: calc((100% - 30px) / 2);
+    }
+
+    .the-plan .card-3, .card-4{
+        margin-top: 8rem;
+    }
+
+     .the-plan .card-section #icon-arrow-removed{
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width:992px){
+    .hero .left-column{
+        margin: 25rem 2rem 0rem;
+    }
+
+    .value-stack .flex-container{
+         flex-wrap: wrap;
+    }
+
+    .value-stack .card{
+         width: calc((100% - 30px) / 2 );
+    }
+
+    .value-stack .card-3{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8rem;
+    }
+
+    .the-stakes .left-column{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .call-to-action-banner .heading{
+        font-size: 50%;
+    }
+
+    .package-pricing .card-section{
+         flex-wrap: wrap;
+    }
+
+    .package-pricing .card{
+         width: calc((100% - 30px) / 2 );
+    }
+
+    .package-pricing .card-3{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8rem;
+    }
+
+    .explainer .left-column{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .hero .left-column{
+        margin-top: 55rem;
+        margin: 55rem 2rem 0rem;
+    }
+
+    .hero .right-column{
+        top: -32rem;
+        right: -16rem;
+    }
+
+    .hero .slogan{
+        font-size: 5rem;
+        max-width: 75%;
+    }
+
+    .hero .description{
+        font-size: 2rem;
+        max-width: 80%;
+    }
+
+   .value-stack .card{
+        width: calc((100% - 30px) / 2 );
+   }
+
+   .value-stack .flex-container{
+        display: block;
+   }
+
+   .value-stack .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 40rem;
+   }
+
+   .value-stack .card-3{
+       margin-top: 0;
+   }
+
+   .the-stakes .right-column{
+       margin-left: 9rem;
+       margin-right: 5rem;
+       padding-top: 20rem;
+   }
+
+   .value-proposition .card{
+        width: calc((100% - 30px) / 2 );
+        padding-bottom: 4rem;
+   }
+
+   .value-proposition .flex-container{
+        display: block;
+   }
+
+   .value-proposition .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 40rem;
+   }
+
+   .value-proposition .card-3{
+       margin-top: 0;
+   }
+
+
+   .package-pricing .card{
+        width: calc((100% - 30px) / 2 );
+   }
+
+   .package-pricing .card-section{
+        display: block;
+   }
+
+   .package-pricing .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 40rem;
+   }
+
+   .package-pricing .card-3{
+       margin-top: 0;
+   }
+
+   .the-plan .card{
+        width: calc((100% - 30px) / 2 );
+   }
+
+   .the-plan .card-section{
+        display: block;
+   }
+
+    .the-plan .card-section #icon-arrow-removed{
+       display: block;
+   }
+
+   .the-plan .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 30rem;
+   }
+
+   .value-stack .card-3{
+       margin-top: 0;
+   }
+
+   .the-plan .card-section .icon{
+       transform: rotate(90deg);
+       top: 100%;
+       left: 90%;
+   }
+
+   .explainer{
+       padding: 16rem 0 16rem;
+   }
+
+   .explainer .left-column .image-2{
+       display: none;
+   }
+
+   .explainer .left-column .image-1{
+       width: 34rem;
+       height: 38rem;
+       border-radius: 3%;
+       bottom: -1rem;
+       right: -16rem;
+   }
+
+   .explainer .right-column{
+        text-align: center;
+   }
+
+}
+
+@media (max-width:576px){
+    .hero{
+       margin-bottom: 10rem;
+    }
+
+    .hero .flex-container .left-column{
+        max-width: 80%;
+    }
+
+    .hero .sds-h1{
+        font-size: 6rem;
+    }
+
+    .hero .description{
+        max-width: 100%;
+    }
+
+    .hero #chevronButton{
+        display: none;
+    }
+
+    .value-stack{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 12rem;
+    }
+
+    .the-stakes .background-image{
+        background-position: bottom 20px;
+    }
+
+    .the-stakes .right-column{
+        padding-top: 30rem;
+    }
+
+    .the-stakes .left-column .image-2{
+        display: none;
+    }
+
+    .the-stakes .left-column .image-1{
+    width: 34rem;
+    height: 38rem;
+    border-radius: 3%;
+    }
+
+    .the-guide{
+        padding: 0rem 0 6rem;
+    }
+
+    .the-guide .right-column .image-1{
+        width: 34rem;
+        height: 32rem;
+        border-radius: 3%;
+    }
+
+    .package-pricing{
+        padding: 14rem 0 0;
+    }
+
+
+
+    .lead-magnet .form-submition{
+        display: block;
+        text-align: center;
+    }
+
+    .lead-magnet .form-submition form{
+        padding-bottom: 2rem;
+    }
+
+    footer .flex-container .about-us{
+        padding-bottom: 10rem;
+        text-align: center;
+    }
+
+    footer .flex-container .about-us .subscription-form{
+        justify-content: center;
+    }
+
+
+    footer .flex-container .about-us .subscription-form input{
+        font-family: 'Poppins' sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--black);
+        background-color: rgba(217, 217, 217, 0.4);
+        border-radius: 40px 0 0 40px;
+        border: 1px solid black;
+        border-right: none;
+        padding: 2rem 1rem;
+        /* min-width: 4rem; */
+        cursor: pointer;
+        transition: .25s;
+    }
+
+    footer .flex-container .about-us .subscription-form .orng-btn {
+        padding: 2rem 2rem;
+    }
+
+    footer .right-column{
+        display: block;
+        text-align: center;
+    }
+
+    footer .flex-container .right-column .menu{
+        padding-bottom: 4rem;
+    }
+
+    footer .flex-container .right-column .menu h4{
+        padding-bottom: 0rem;
+    }
+
+    footer .flex-container .right-column .sub-menu{
+        padding-bottom: 4rem;
+    }
+
+    footer .flex-container .right-column .sub-menu h4{
+        padding-bottom: 0rem;
+    }
+
+    footer .flex-container .right-column .company{
+        padding-bottom: 4rem;
+    }
+
+    footer .flex-container .right-column .company h4{
+        padding-bottom: 0rem;
+    }
+}
