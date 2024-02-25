@@ -1,5 +1,5 @@
-     <!-- custom header file link -->
-    <?php wp_head(); ?>
+    <!-- custom header file link -->
+    <?php get_header(); ?>
     <!-- Hero section starts here -->
     <section id="hero" class="hero">
         <div class="flex-container">
@@ -311,4 +311,4 @@
 
 
 <!-- custom footer file link -->
-<?php wp_footer(); ?>
+<?php get_footer(); ?>

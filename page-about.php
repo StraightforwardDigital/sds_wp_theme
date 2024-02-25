@@ -2,9 +2,9 @@
 /*
 Template Name: About
 */
-
-
 ?>
+<!-- custom header file link -->
+<?php get_header(); ?>
 
 <!-- The Stakes section starts here -->
 <section class="the-stakes">
@@ -31,3 +31,6 @@ Template Name: About
     </div>
 </section>
 <!-- The Stakes section ends here -->
+
+<!-- custom footer file link -->
+<?php get_footer(); ?>

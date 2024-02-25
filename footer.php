@@ -14,6 +14,13 @@
             </div>
 
             <div class="right-column">
+                <!-- Dynamic WordPress Menus -->
+                <?php if (has_nav_menu('footer-menu')) : ?>
+                    <nav class="menu">
+                        <?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
+                    </nav>
+                <?php endif; ?>
+
                 <div class="menu">
                     <h4>menu</h4>
                     <ul>
@@ -57,7 +64,7 @@
         </div>
         <div class="bottom-message">
             <div class="flex-container">
-                <p>2024 straightforward Digital Strategy <i class="fa-regular fa-copyright"></i> All Rights Reserved.</p>
+                <p>&copy; <?php echo date("Y"); ?> straightforward Digital Strategy <i class="fa-regular fa-copyright"></i> All Rights Reserved.</p>
             </div>
         </div>
 
@@ -71,5 +78,9 @@
 
     <!-- custom js file link -->
     <script src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
+
+
+    <!-- custom footer file link -->
+    <?php wp_footer(); ?>
 </body>
 </html>

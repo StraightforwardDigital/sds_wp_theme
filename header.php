@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SDS Website</title>
 
@@ -16,10 +16,11 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 
-
+    <!-- custom header file link -->
+    <?php wp_head(); ?>
 </head>
 <!------------------------------- header section start here ------------------------------->
-<body>
+<body <?php body_class(); ?>>
     <header class='header'>
         <div class="header-container">
 
