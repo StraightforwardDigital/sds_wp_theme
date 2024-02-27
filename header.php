@@ -43,4 +43,26 @@
        
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#past-work">Past Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <!-- Add other navigation items here -->
+            <a href="#"><button id="header-button" class="orng-btn">Book a Call</button></a>  
+        </ul>
+    </nav>
+    <script>
+    jQuery(document).ready(function() {
+        $('#mobile-menu-toggle').click(function() {
+            $('#mobile-menu').slideToggle();
+        });
+    });
+
+
+    </script>
     <!-- header section ends here -->
