@@ -25,11 +25,11 @@
         <div class="header-container">
 
                 <a href="#" class="logo"><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=""></a>
-
-                <div class="fas fa-bars"></div>
+                <!-- Mobile Menu Toggle Button -->
+                <div id="mobile-menu-toggle" class="fas fa-bars"></div>
 
                 <nav id="header-navbar" class="navbar">
-                    <ul>
+                    <ul class="desktop-menu">
                         <li><a href="#home">home</a></li>
                         <li><a href="#services">services</a></li>
                         <li><a href="#past work">past work</a></li>
