@@ -1,3 +1,4 @@
+//Nav Menu Mobile Toggle
 jQuery(document).ready(function(){
 
 	jQuery('.fa-bars').click(function(){
@@ -12,13 +13,24 @@ jQuery(document).ready(function(){
 });
 
 
+//change out the hero image at 768px
+function adjustHeroImage() {
+    var screenWidth = window.innerWidth;
+    var imgElement = document.querySelector('.hero-image');
+    var newImgSrc = screenWidth > 768 ? "<?php echo get_template_directory_uri(); ?>/images/hero-image.png" : "<?php echo get_template_directory_uri(); ?>/images/hero-image-mobile.png";
+    imgElement.src = newImgSrc;
+}
+
+// Run the function on load and on resize
+window.onload = adjustHeroImage;
+window.onresize = adjustHeroImage;
 
 
 
 
 
 
-//Code to scroll the home page to a specific section when chevron button is clicked 
+//Scroll the home page to a specific section when chevron button is clicked 
 document.getElementById("chevronButton").addEventListener("click", function() {
   document.getElementById("targetSection").scrollIntoView({
     behavior: "smooth", // This makes the scroll smoothly
@@ -31,7 +43,7 @@ document.getElementById("chevronButton").addEventListener("click", function() {
 
 
 
-// Function to check the scroll position and hide/show the chevron arrow
+//Check the scroll position and hide/show the chevron arrow
 function handleScroll() {
   // Set the threshold for when to hide the arrow, e.g., 100px from the top
   const threshold = 100;
@@ -47,13 +59,6 @@ function handleScroll() {
 }
 // Add the scroll event listener to the window
 window.addEventListener('scroll', handleScroll);
-
-
-
-
-
-
-
 
 
 
