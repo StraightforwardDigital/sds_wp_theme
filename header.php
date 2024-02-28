@@ -59,7 +59,7 @@
     <script>
     jQuery(document).ready(function() {
         $('#mobile-menu-toggle').click(function() {
-            $('#mobile-menu').slideToggle();
+            $('#mobile-menu').slideToggle(500);
         });
     });
 
